@@ -6,6 +6,9 @@
     --clr-slate800: #1e293b;
     --clr-rose: #e11d48;
     --clr-indigo: #4f46e5;
+
+    /*  rose:	rgb(225, 29, 72)*/
+    /*    indigo:rgb(79, 70, 229)*/
 }
 
 *{
@@ -41,4 +44,12 @@ button{
     background: none;
     cursor: pointer;
     color: inherit;
+}
+
+a{
+    color: var(--clr-rose);
+}
+
+strong{
+    color: var(--clr-indigo);
 }
