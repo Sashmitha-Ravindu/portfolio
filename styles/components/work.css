@@ -14,11 +14,9 @@
     margin: 1rem auto;
 }
 
-.work__project{
+.work__project:not(:last-child){
     margin-bottom: 5rem;
 }
-
-
 
 .work__project-title{
     font-size: var(--size-base);
@@ -42,7 +40,7 @@
 }
 
 .work__img-wrapper:hover::after{
-    background-color: rgba(79, 70, 229,0.1);
+    background-color: rgba(79, 70, 229,0.2);
 }
 
 .work__project-description1{
@@ -61,6 +59,10 @@
     font-size: var(--size-sm);
 }
 
+.work__project-subtitle{
+    display: none;
+}
+
 /* xs */
 @media (min-width: 475px) {
     .work__title {
@@ -71,12 +73,79 @@
         font-size: var(--size-base);
         margin: 1.5rem auto;
     }
+
+    .work__project-title{
+        font-size: var(--size-lg);
+        margin-bottom: 1.5rem;
+    }
+    .work__project-description1{
+        font-size: var(--size-base);
+        margin: 1.5rem 0;
+    }
+
+    .work__project-description2{
+        font-size: var(--size-base);
+        margin-bottom: 1.5rem;
+    }
+
+    .work__project-btn{
+        font-size: var(--size-base);
+    }
 }
 
 /* sm */
-/*@media(min-width: 640px){
+@media(min-width: 640px){
+    .work__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
-}*/
+    .work__project-title{
+        display: none;
+    }
+
+    .work__project-description1{
+        font-size: var(--size-xs);
+        margin: 1em 0;
+    }
+
+    .work__project-description2{
+        font-size: var(--size-xs);
+        margin-bottom: 1em;
+    }
+
+    .work__project-btn{
+        font-size: var(--size-base);
+    }
+
+    .work__img-wrapper{
+        margin: 0.5em;
+    }
+
+    .work__project:not(:last-child){
+        margin-bottom: 0;
+    }
+
+    .work__project-subtitle{
+        display: block;
+        font-size: var(--size-base);
+    }
+
+    .work__project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .work__project-description1{
+        max-width: 60ch;
+    }
+
+    .work__project-description2{
+        max-width: 60ch;
+    }
+}
 
 /* md */
 /*@media(min-width: 768px){
